@@ -6,55 +6,78 @@
 
 body{
     background-color: #6a4c93;
-    margin-top: 10%;
-    font-family: 'Poppins', sans-serif;
+}
+
+#holder{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #gen{
-    width: 15vw;
-    height: 10vh;
-    margin-left: 42.5vw;
+    height: 20vh;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 'Sigmar', cursive;
+    background-color: transparent;
+    font-size: 5rem;
+    color: white;
+    border: none;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
 }
 
 #ques{
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     width: 100%;
-    height: 20vh;
+    min-height: 20vh;
+    color: white;
+    font-family: 'Noto Serif TC', serif;
 }
 
 #ans{
     display: grid;
     grid-template-columns: auto auto;
-    width: fit-content;
-    margin-left: 20vw;
+    width: 100%;
+    gap: 1rem;
+    justify-content: center;
+}
+
+#ans button{
+    width: 30vw;
+    height: 20vh;
+    font-size: 1rem;
+    border-radius: 10px;
+    transition: .5s;
+    font-size: 2rem;
+    font-family: 'Noto Serif TC', serif;
+}
+
+#ans button:hover{
+    scale: 1.1;
 }
 
 #ans1{
     background-color: #ff595e;
-    width: 30vw;
-    height: 20vh;
-    border-radius: 10px;
-    font-size: 20px;
 }
 #ans2{
     background-color: #ffca3a;
-    width: 30vw;
-    height: 20vh;
-    border-radius: 10px;
-    font-size: 20px;
 }
 #ans3{
     background-color: #8ac926;
-    width: 30vw;
-    height: 20vh;
-    border-radius: 10px;
-    font-size: 20px;
 }
 #ans4{
     background-color: #1982c4;
-    width: 30vw;
-    height: 20vh;
-    border-radius: 10px;
-    font-size: 20px;
 }
